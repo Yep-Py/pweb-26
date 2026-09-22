@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    .container {
+        padding: 24px;
+        max-width: 500px;
+    }
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    .form-field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 16px;
+    }
+
+    input, textarea, button {
+        border: 1px solid grey;
+        padding: 8px;
+    }
+
+    button {
+        width: fit-content;
+        padding: 8px 16px;
+        cursor: pointer;
+        background-color: #efefef;
+    }
+    </style>
+    <title>SMA Islam As Sakinah</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img width="48" src="media/logo.jpg"/>
+        <h1 class="logo">Kontak - SMA Islam As Sakinah</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="jurusan.html">Jurusan</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+    </nav>
+    <div class="container">
+      <h2>Form Kontak</h2>
+      <form action="" method="get" class="contact-form">
+        <div class="form-field">
+          <label for="name">Nama Lengkap: </label>
+          <input type="text" name="name" id="name" required placeholder="Nama..." />
+        </div>
+        <div class="form-field">
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required placeholder="Email..." />
+        </div>
+        <div class="form-field">
+          <label for="message">Pesan: </label>
+          <textarea id="message" name="message" rows="4" cols="50" placeholder="Pesan..."></textarea>
+        </div>
+        <div class="form-field">
+          <button type="submit">Kirim</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>(C) Yudhistira Eka Pratama 2026. Situs ini hanya sebagai tugas dan tidak berniat sebagai pemalsuan</p>
+    </footer>
+  </body>
+</html>
