@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LibraryReg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-dark container-fluid site-nav">
+        <a class="navbar-brand brand" href="index.html">
+          <span>LibraryReg</span>
+          <small>Institut Teknologi dua Satu oktober</small>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <div class="navbar-nav align-items-lg-center gap-lg-4">
+            <a class="nav-link" href="index.html">Beranda</a>
+            <a class="nav-link" href="index.html#tentang">Tentang</a>
+            <a class="nav-link" href="membership.html">Anggota</a>
+            <a class="nav-link" href="index.html#layanan">Layanan</a>
+            <a class="btn btn-login" href="login.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="membership-page">
+      <div class="container-fluid content-width">
+        <h1>Keanggotaan</h1>
+        <div class="row g-4 membership-layout">
+          <section class="col-xl-8">
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm member-table">
+                <thead>
+                  <tr>
+                    <th>Jenis</th>
+                    <th>No. Identitas</th>
+                    <th>Nama</th>
+                    <th>Program Studi</th>
+                    <th>Email</th>
+                    <th>No. Telepon</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="memberRows"></tbody>
+              </table>
+            </div>
+            <nav class="pagination-controls">
+              <button class="btn btn-primary-deep" type="button">&lt;&lt;</button>
+              <span class="current-page">1/1</span>
+              <button class="btn btn-primary-deep" type="button">&gt;&gt;</button>
+            </nav>
+          </section>
+          <section class="col-xl-3 offset-xl-1">
+            <form id="memberForm" data-member-form>
+              <input type="hidden" name="originalIdentity">
+              <div class="mb-3">
+                <label class="form-label" for="memberIdentity">Nomor Identitas</label>
+                <input
+                  class="form-control"
+                  id="memberIdentity"
+                  name="identity"
+                  placeholder="Nomor Identitas..."
+                  required
+                >
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="memberType">Jenis Keanggotaan</label>
+                <select class="form-select" id="memberType" name="type" required>
+                  <option value="" selected disabled>Jenis Keanggotaan</option>
+                  <option>Mahasiswa</option>
+                  <option>Dosen</option>
+                  <option>Tenaga Pendidikan</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="memberName">Nama Lengkap</label>
+                <input
+                  class="form-control"
+                  id="memberName"
+                  name="name"
+                  placeholder="Nama Lengkap..."
+                  required
+                >
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="memberProgram">Program Studi</label>
+                <select class="form-select" id="memberProgram" name="program" required>
+                  <option value="" selected disabled>Program Studi</option>
+                  <option>Informatika</option>
+                  <option>Sistem Informasi</option>
+                  <option>Teknik Komputer</option>
+                  <option>Manajemen</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="memberEmail">Email</label>
+                <input
+                  class="form-control"
+                  id="memberEmail"
+                  name="email"
+                  type="email"
+                  placeholder="Email..."
+                  required
+                >
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="memberPhone">No. Telepon</label>
+                <input
+                  class="form-control"
+                  id="memberPhone"
+                  name="phone"
+                  type="tel"
+                  placeholder="No. Telepon..."
+                  required
+                >
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="memberAddress">Alamat</label>
+                <textarea
+                  class="form-control"
+                  id="memberAddress"
+                  name="address"
+                  rows="3"
+                  placeholder="Alamat..."
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Simpan</button>
+              <button class="btn btn-outline-secondary ms-2 d-none" type="button" data-cancel-edit>
+                Batal
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container-fluid footer-content">
+        <p>
+          2026 Yudhistira Eka Pratama. Perumpamaan entitas lain bersifat parodi dan tidak bertujuan
+          untuk menipu maupun mencemar nama baik.
+        </p>
+        <address>
+          Jl. Lorem Ipsum, Surabaya 60123<br>
+          Jam layanan: 06:00-18:00 WIB (Senin-Jum’at)<br>
+          Email: lorem@ipsum.com / WA: +6281234567890<br>
+          Instagram: @...
+        </address>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

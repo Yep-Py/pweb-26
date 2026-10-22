@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LibraryReg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-dark container-fluid site-nav">
+        <a class="navbar-brand brand" href="index.html">
+          <span>LibraryReg</span>
+          <small>Institut Teknologi dua Satu oktober</small>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <div class="navbar-nav align-items-lg-center gap-lg-4">
+            <a class="nav-link" href="index.html">Beranda</a>
+            <a class="nav-link" href="#tentang">Tentang</a>
+            <a class="nav-link" href="membership.html">Anggota</a>
+            <a class="nav-link" href="#layanan">Layanan</a>
+            <a class="btn btn-login" href="login.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="tentang">
+        <img class="hero-books" src="assets/hero-books.png">
+        <div class="hero-copy">
+          <h1>
+            Membawa literasi<br class="d-none d-md-block">
+            ke era digitalisasi
+          </h1>
+          <p>
+            LibraryReg adalah upaya digitalisasi perpustakaan Institut Teknologi dua Satu oktober
+            untuk mempermudah akses layanan perpustakaan untuk pengunjung dan pegawai.
+          </p>
+          <a class="btn btn-primary-deep" href="register.html">Daftar Sekarang!</a>
+        </div>
+        <img class="hero-library" src="assets/hero-library.png">
+      </section>
+
+      <section class="facilities-section">
+        <div class="container-fluid content-width">
+          <h2 id="facilities-title">Fasilitas Perpustakaan</h2>
+          <div class="row g-3 facility-row">
+            <div class="col-md-4">
+              <figure class="facility-card">
+                <img src="assets/facility-cafe.png">
+                <figcaption>Kafe Belajar/CCWS</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure class="facility-card">
+                <img src="assets/facility-circulation.png">
+                <figcaption>Ruang Sirkulasi</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure class="facility-card">
+                <img src="assets/facility-theater.png">
+                <figcaption>Teater Mini</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="layanan">
+        <div class="container-fluid content-width services-layout">
+          <h2 id="services-title">
+            Layanan<br>
+            Web
+          </h2>
+          <div class="row g-3 service-cards">
+            <div class="col-4">
+              <a class="service-card" href="membership.html">
+                <img src="assets/icon-membership.svg">
+                <span>Keanggotaan</span>
+              </a>
+            </div>
+            <div class="col-4">
+              <a class="service-card" href="#layanan">
+                <img src="assets/icon-eresources.svg">
+                <span>e-Resources</span>
+              </a>
+            </div>
+            <div class="col-4">
+              <a class="service-card" href="#layanan">
+                <img src="assets/icon-lost-found.svg">
+                <span>Lost &amp; Found</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-fluid footer-content">
+        <p>
+          2026 Yudhistira Eka Pratama. Perumpamaan entitas lain bersifat parodi dan tidak bertujuan
+          untuk menipu maupun mencemar nama baik.
+        </p>
+        <address>
+          Jl. Lorem Ipsum, Surabaya 60123<br>
+          Jam layanan: 06:00-18:00 WIB (Senin-Jum’at)<br>
+          Email: lorem@ipsum.com / WA: +6281234567890<br>
+          Instagram: @...
+        </address>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

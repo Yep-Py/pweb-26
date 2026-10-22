@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3c3cc0" />
+    <title>Student Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home">Student Management</a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#students">Students</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main class="workspace" id="home">
+      <section class="student-form">
+        <h1 id="form-title">Form Student</h1>
+        <form action="#students" method="get">
+          <label>
+            <span>NIM</span>
+            <input name="nim" placeholder="Masukkan NIM" />
+          </label>
+          <label>
+            <span>Nama Lengkap</span>
+            <input name="nama" placeholder="Masukkan Nama Lengkap" />
+          </label>
+          <label>
+            <span>Jurusan</span>
+            <select name="jurusan">
+              <option>Teknik Informatika</option>
+              <option>Sistem Informasi</option>
+              <option>Teknik Komputer</option>
+              <option>Manajemen</option>
+            </select>
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" placeholder="Masukkan Email" />
+          </label>
+          <div class="form-actions">
+            <button class="button button-save" type="submit">Simpan</button>
+            <button class="button button-cancel" type="reset">Batal</button>
+            <button class="button button-reset" type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="student-list" id="students">
+        <div class="list-heading">
+          <h2 id="list-title">Data Mahasiswa</h2>
+          <input class="search" type="search" placeholder="Cari Mahasiswa..." />
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>No.</th><th>NIM</th><th>Nama</th><th>Jurusan</th><th>Email</th><th>Aksi</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>231001</td><td>Andi Pratama</td><td>Informatika</td><td>andi@mail.com</td><td class="actions"><button>✏️</button><button>🗑️</button></td></tr>
+              <tr><td>2</td><td>231002</td><td>Siti Aisyah</td><td>Sistem Informasi</td><td>siti@mail.com</td><td class="actions"><button>✏️</button><button>🗑️</button></td></tr>
+              <tr><td>3</td><td>231003</td><td>Budi Santoso</td><td>Teknik Komputer</td><td>budi@mail.com</td><td class="actions"><button>✏️</button><button>🗑️</button></td></tr>
+              <tr><td>4</td><td>231004</td><td>Nina Marlina</td><td>Manajemen</td><td>nina@mail.com</td><td class="actions"><button>✏️</button><button>🗑️</button></td></tr>
+              <tr><td>5</td><td>231005</td><td>Rizky Pratama</td><td>Informatika</td><td>rizky@mail.com</td><td class="actions"><button>✏️</button><button>🗑️</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <p>Menampilkan 1 - 5 dari 51 data</p>
+          <nav>
+            <a href="#students">&lt;&lt;</a>
+            <a class="current" href="#students">1</a>
+            <a href="#students">2</a>
+            <a href="#students">3</a>
+            <a href="#students">&gt;&gt;</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
