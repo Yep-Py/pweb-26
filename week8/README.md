@@ -9,11 +9,11 @@ Institut Teknologi dua Satu oktober masih melakukan pendaftaran anggota secara m
 
 LibraryReg bertujuan untuk mengkonsolidasi layanan-layanan daring yang dipakai para anggota dan pengunjung serta keberadaan/informasi tentang perpustakaan. Utamanya, LibraryReg menyediakan landing page yang ditujukan untuk masyarakat umum dan anggota/pengunjung. Landing page tersebut berisi informasi tentang fasilitas-fasilitas serta lokasi/kontak perpustakaan. Landing page juga berisi link ke layanan-layanan terpisah seperti Lost & Found dan e-Resources.
 
-Anggota dapat melakukan log in, dan civitas akademika dapat melakukan registrasi untuk menjadi anggota dengan mengisi identitasnya. Data anggota dapat ditambah, dikelola, maupun dihapus pada halaman keanggotaan.
+Anggota dapat melakukan log in, dan civitas akademika dapat melakukan registrasi untuk menjadi anggota dengan mengisi identitasnya. Data anggota dapat ditambah, dikelola, maupun dihapus pada halaman pengelolaan anggota.
 - Ruang lingkup:
   - Landing page dengan navbar, hero, informasi fasilitas & layanan, dan footer.
   - Halaman login & registrasi menjadi anggota
-  - Halaman 
+  - Halaman pengelolaan anggota
 2. Buatkan Rancangan Halaman dan Structure Menu:
 Beranda:
 - Header: Tulisan LibraryReg serta navbar menu:
